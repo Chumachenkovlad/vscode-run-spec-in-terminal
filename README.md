@@ -1,6 +1,6 @@
-# run-spec-with-jest README
+# Run-Spec-In-Terminal
 
-This is the README for your extension "run-spec-with-jest". After writing up a brief description, we recommend including the following sections.
+_run-spec-in-terminal_ is an helper extension to instant running spec in terminal from active file.
 
 ## Extension commands
 

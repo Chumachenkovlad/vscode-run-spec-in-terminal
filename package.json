@@ -1,8 +1,12 @@
 {
-  "name": "run-spec-with-jest",
-  "displayName": "run-spec-with-jest",
+  "name": "run-spec-in-terminal",
+  "displayName": "run-spec-in-terminal",
   "description": "Extension for running spec file with jest",
-  "version": "0.0.1",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Chumachenkovlad/vscode-run-spec-in-terminal"
+  },
+  "version": "0.0.2",
   "publisher": "chumachenkovlad",
   "engines": {
     "vscode": "^1.27.0"

@@ -3,6 +3,7 @@ import * as vscode from 'vscode';
 
 const COMMAND_NAME = 'runSpecInTerminal';
 const UNSAVED_FILE_PATH = 'Untitled-1';
+const FILE_EXTENSION = '.spec.ts';
 
 export function activate(context: vscode.ExtensionContext) {
   let disposable = vscode.commands.registerCommand(
@@ -12,19 +13,19 @@ export function activate(context: vscode.ExtensionContext) {
 
       if (!editor) {
         return vscode.window.showErrorMessage(
-          'Error: No active file! Please pick file with .spec extension'
+          `Error: No active file! Please pick file with ${FILE_EXTENSION} extension`
         );
       }
 
       if (editor.document.uri.path === UNSAVED_FILE_PATH) {
         return vscode.window.showErrorMessage(
-          'Error: Unsaved file! Please save file with .spec extension'
+          `Error: Unsaved file! Please save file with ${FILE_EXTENSION} extension`
         );
       }
 
-      if (!editor.document.fileName.match(/.spec$/)) {
+      if (!editor.document.fileName.match(new RegExp(`${FILE_EXTENSION}$`))) {
         return vscode.window.showErrorMessage(
-          'Error: File has incorrect extension! Please pick file with .spec extension'
+          `Error: File has incorrect extension! Please pick file with ${FILE_EXTENSION} extension`
         );
       }
 
