@@ -6,7 +6,7 @@
     "type": "git",
     "url": "https://github.com/Chumachenkovlad/vscode-run-spec-in-terminal"
   },
-  "version": "0.0.2",
+  "version": "0.0.3",
   "publisher": "chumachenkovlad",
   "engines": {
     "vscode": "^1.27.0"

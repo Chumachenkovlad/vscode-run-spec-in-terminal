@@ -1,6 +1,7 @@
 # Run-Spec-In-Terminal
 
 _run-spec-in-terminal_ is an helper extension to instant running spec in terminal from active file.
+Only for Unix OS.
 
 ## Extension commands
 
